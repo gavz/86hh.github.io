@@ -74,7 +74,7 @@ pre { font-family: Consolas, monaco, monospace; font-size: 12px; font-weight: 40
   <p>The function <i>__scrt_get_dyn_tls_init_callback</i> gets a pointer to a TLS callback table to call the first entry.  The callback function is protected by CFG so the compiler adds code (marked in green) to check if the function address is valid.</p>
   <p>When loading the image, if all conditions are met and CFG is good to work, the function <i>@_guard_check_icall_nop@4</i>'s address is replaced with a function address to NTDLL called <i>LdrpValidateUserCallTarget</i>:</p>
     </br>
-  <img src="cfg_images\cfg_ntdll.png" class="img-center" style="width: 80%; height: 80%;">
+  <img src="https://raw.githubusercontent.com/86hh/86hh.github.io/master/texts/cfg_images/cfg_ntdll.png" class="img-center" style="width: 80%; height: 80%;">
   </br>
   </br>
    <h3>Introducing the CFGBitmap</h3>
